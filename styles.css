@@ -90,13 +90,16 @@ line-height: 16px;
     text-align: left;
 }
 
+.inside-column {
+    padding-left: 12px;
+}
+
 .banner {
     width: 310px;
     object-fit: cover;
 }
 
 .header {
-    height: 23px;
     margin-bottom: 31px;
 }
 
@@ -112,7 +115,7 @@ line-height: 16px;
     margin-right: 40px;
 }
 
-.nav:nth-child(3) {
+.nav:nth-last-child() {
     margin-right: 0;
 }
 
