@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-size: 0;
 }
 
 .body {
@@ -123,10 +124,15 @@ line-height: 16px;
 width: 258px;
 margin-right: 33px;
 float: left;
+margin-bottom: 70px;
 }
 
 .card:nth-child(3n) {
     margin-right: 0;
+}
+
+.card:nth-last-child(3) {
+    margin-bottom: 0px;
 }
 
 .image {
@@ -147,7 +153,9 @@ float: left;
 }
 
 .footer {
-    text-align: right;
+    display: flex;
+    justify-content: right;
+    width: 1200px;
 }
 
 .page {
@@ -159,11 +167,11 @@ float: left;
     margin-right: 10px;
     color: #3D3D3D;
     text-align: center;
-    padding-top: 10px;
-    border: 1px solid #E5E5E5
+    border: 1px solid #E5E5E5;
+    vertical-align: middle;
 }
 
-.page:last-child {
+.page:nth-last-child() {
     margin-right: 0;
 }
 
